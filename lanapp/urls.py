@@ -4,5 +4,5 @@ from .views import home
 app_name = 'lanapp'
 
 urlpatterns = [
-    path('', home),
+    path('<slug:slug>/', home, name="malumot"),
 ]
